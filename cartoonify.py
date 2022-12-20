@@ -1,7 +1,8 @@
 import cv2
+from numpy import ndarray
 
 
-def cartoonify(imagePath):
+def cartoonify(imagePath: str) -> ndarray:
     """
     Cartoonify Image
     :param imagePath: path to original image
