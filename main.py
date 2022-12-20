@@ -38,13 +38,13 @@ def cartoonify(ImagePath):
 
     #converting an image to grayscale
     grayScaleImage= cv2.cvtColor(originalmage, cv2.COLOR_BGR2GRAY)
-#     ReSized2 = grayScaleImage
+
     #plt.imshow(ReSized2, cmap='gray')
 
 
     #applying median blur to smoothen an image
     smoothGrayScale = cv2.medianBlur(grayScaleImage, 5)
-#     ReSized3 = smoothGrayScale
+
     #plt.imshow(ReSized3, cmap='gray')
 
     #retrieving the edges for cartoon effect
@@ -52,21 +52,16 @@ def cartoonify(ImagePath):
     getEdge = cv2.adaptiveThreshold(smoothGrayScale, 255, 
         cv2.ADAPTIVE_THRESH_MEAN_C, 
         cv2.THRESH_BINARY, 9, 9)
-
-#     ReSized4 = getEdge
     #plt.imshow(ReSized4, cmap='gray')
 
     #applying bilateral filter to remove noise 
     #and keep edge sharp as required
     colorImage = cv2.bilateralFilter(originalmage, 9, 300, 300)
-#     ReSized5 = colorImage
     #plt.imshow(ReSized5, cmap='gray')
 
 
     #masking edged image with our "BEAUTIFY" image
     cartoonImage = cv2.bitwise_and(colorImage, colorImage, mask=getEdge)
-
-#     ReSized6 = cartoonImage
     #plt.imshow(ReSized6, cmap='gray')
 
     # Plotting the whole transition
