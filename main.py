@@ -1,11 +1,16 @@
-# TODO: Streamlit app
 import cv2
+import easygui
 
-from cartoonify import cartoonify
+from cartoonify import Cartoonify
 
-image = input("Image File name: ")
-cartoonified = cartoonify(image)
-cv2.imshow('cartoon', cartoonified)
-cv2.waitKey(3000)
-cv2.imwrite("cartoonified.png", cartoonified)
-cv2.destroyAllWindows()
+
+def main():
+    cartoonifier = Cartoonify()
+    image = easygui.fileopenbox()
+    cartoonified = cartoonifier.cartoonify(image)
+    cv2.imwrite("images/cartoonified.png", cartoonified)
+    print("Cartoonified image stored at images/cartoonified.png")
+
+
+if __name__ == "__main__":
+    main()
