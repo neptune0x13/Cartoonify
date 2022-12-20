@@ -1,7 +1,7 @@
 import cv2
 import easygui
 
-from cartoonify import Cartoonify
+from lib.cartoonify import Cartoonify
 
 
 def main():
