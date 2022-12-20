@@ -1,1 +1,1 @@
-# Cartoonify
+# Cartoonify ML Project
