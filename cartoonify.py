@@ -18,8 +18,8 @@ def cartoonify(imagePath):
 
     # Getting the edges
     img_edges = cv2.adaptiveThreshold(img_blur, 255,
-                                  cv2.ADAPTIVE_THRESH_MEAN_C,
-                                  cv2.THRESH_BINARY, 9, 9)
+                                      cv2.ADAPTIVE_THRESH_MEAN_C,
+                                      cv2.THRESH_BINARY, 9, 9)
 
     # Smoothening and Reducing noise w/o loss in edges
     img_smooth = cv2.bilateralFilter(img, 9, 300, 300)
