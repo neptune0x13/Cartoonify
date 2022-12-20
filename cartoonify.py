@@ -7,7 +7,6 @@ def cartoonify(imagePath):
     :param imagePath: path to original image
     :return: Cartoonified Image
     """
-    # TODO: from src file, only cartoonifying thing
     orgImg = cv2.imread(imagePath)
     # orgImg = cv2.cvtColor(orgImg, cv2.COLOR_RGB2RGB)
     grayImg = cv2.cvtColor(orgImg, cv2.COLOR_BGR2GRAY)
