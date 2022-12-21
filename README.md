@@ -23,21 +23,29 @@
 ## How to run the program?
 1. Try on [Streamlit](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
 2. Run CLI app:
-- Clone Repository
-  ```
-  git clone https://github.com/neptune0x13/Cartoonify.git
-  ```
-- Open terminal in project folder
-- Install requirements
-  ```
-  pip3 install -r requirements.txt
-  ```
-- Run CLI app
-  ```
-  python3 main.py
-  ```
+   - Clone Repository
+     ```
+     git clone https://github.com/neptune0x13/Cartoonify.git
+     ```
+   - Open terminal in project folder
+   - Install requirements
+     ```
+     pip3 install -r requirements.txt
+     ```
+   - Run CLI app
+     ```
+     python3 main.py
+     ```
+     - *Expected Interface*
+       <br><img src="images/cliInterface.png">
+3. Run Streamlit app
+  - Try on web [here](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
+  - Run locally
+    ```
+    streamlit run streamlit_main.py
+    ```
   - *Expected Interface*
-    <br><img src="images/cliInterface.png">
+    <br><img src="images/streamlitInterface.png">
 
 ## References
 - [Streamlit](https://docs.streamlit.io/)
