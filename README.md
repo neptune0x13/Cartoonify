@@ -1,4 +1,5 @@
 # Cartoonify Computer Vision Project
+
 ### Try at: [Streamlit](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
 
 - This is a mini app to cartoonify any image.
@@ -45,7 +46,7 @@
     streamlit run streamlit_main.py
     ```
   - *Expected Interface*
-    <br><img src="images/streamlitInterface.png">
+    <br><img src="images/streamlitInterface.png"><br><br>
 
 ## References
 - [Streamlit](https://docs.streamlit.io/)

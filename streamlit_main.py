@@ -14,8 +14,6 @@ st.write("##### Either:")
 st.write("###### - Click a picture ")
 st.write("###### - Upload a Picture  ")
 
-camera = st.checkbox(label="Click Picture")
-
 
 def cartooner(pic):
     with open('images/tempFile.jpg', 'wb') as f:
@@ -35,6 +33,7 @@ def cartooner(pic):
                        file_name="cartoonified.png")
 
 
+camera = st.checkbox(label="Click Picture")
 if camera:
     picture = st.camera_input("Take a picture")
     if picture:
