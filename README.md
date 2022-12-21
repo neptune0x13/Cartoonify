@@ -1,4 +1,4 @@
-# Cartoonify ML Project
+# Cartoonify Computer Vision Project
 ### Try at: [Streamlit](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
 
 - This is a mini app to cartoonify any image.
