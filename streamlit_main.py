@@ -5,15 +5,14 @@ from lib.cartoonify import Cartoonify
 cartoonifier = Cartoonify()
 
 st.set_page_config(page_title="Cartoonifier",
-                   page_icon="images/favicon.png",
-                   layout="wide")
+                   page_icon="images/favicon.png")
 
 st.header("Cartoonifier")
-st.subheader("Using this app you can Cartoonify your Images.")
-st.write("### Github : https://github.com/neptune0x13/Cartoonify")
-st.write("#### Either:")
-st.write("##### - Click a picture ")
-st.write("##### - Upload a Picture  ")
+st.write("#### Github : https://github.com/neptune0x13/Cartoonify")
+st.write("This is a mini app using which you can Cartoonify your Images using OpenCV library.")
+st.write("##### Either:")
+st.write("###### - Click a picture ")
+st.write("###### - Upload a Picture  ")
 
 camera = st.checkbox(label="Click Picture")
 
@@ -24,11 +23,13 @@ def cartooner(pic):
 
     cartoonified = cartoonifier.cartoonify("images/tempFile.jpg")
     cv2.imwrite("images/cartoonified.png", cartoonified)
+
     col1, col2 = st.columns(2)
     with col1:
         st.image("images/tempFile.jpg", caption="Original Image")
     with col2:
         st.image("images/cartoonified.png", caption="Cartoonified Image")
+
     st.download_button(label="Download Cartoonified Image",
                        data=open("images/cartoonified.png", "rb").read(),
                        file_name="cartoonified.png")
