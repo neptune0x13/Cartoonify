@@ -37,8 +37,8 @@
      ```
      python3 main.py
      ```
-     - *Expected Interface*
-       <br><img src="images/cliInterface.png">
+   - *Expected Interface*
+     <br><img src="images/cliInterface.png">
 3. Run Streamlit app
    - Try on web [here](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
    - Run locally
