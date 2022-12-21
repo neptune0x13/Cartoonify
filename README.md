@@ -40,13 +40,13 @@
      - *Expected Interface*
        <br><img src="images/cliInterface.png">
 3. Run Streamlit app
-  - Try on web [here](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
-  - Run locally
-    ```
-    streamlit run streamlit_main.py
-    ```
-  - *Expected Interface*
-    <br><img src="images/streamlitInterface.png"><br><br>
+   - Try on web [here](https://kunal-attri-cartoonify-streamlit-main-o169mo.streamlit.app/)
+   - Run locally
+     ```
+     streamlit run streamlit_main.py
+     ```
+   - *Expected Interface*
+     <br><img src="images/streamlitInterface.png"><br><br>
 
 ## References
 - [Streamlit](https://docs.streamlit.io/)
