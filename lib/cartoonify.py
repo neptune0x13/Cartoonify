@@ -12,6 +12,7 @@ class Cartoonify:
         """
         # Reading the Image
         img = cv2.imread(imagePath)
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
         # Converting to Grayscale
         img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
