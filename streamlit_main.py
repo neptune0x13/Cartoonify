@@ -9,9 +9,11 @@ st.set_page_config(page_title="Cartoonifier",
                    layout="wide")
 
 st.header("Cartoonifier")
-st.subheader("Here, you can click an image or upload one to cartoonify it!")
-st.write("<h5> Click a picture - Click the picture through WebCam and cartoonify </h5>"
-         "<h5> Upload Picture  - Upload an image from your computer and cartoonify </h5")
+st.subheader("Using this app you can Cartoonify your Images.")
+st.write("### Github : https://github.com/neptune0x13/Cartoonify")
+st.write("#### Either:")
+st.write("##### - Click a picture ")
+st.write("##### - Upload a Picture  ")
 
 camera = st.checkbox(label="Click Picture")
 
